@@ -18,7 +18,7 @@ const CategoryProduct = () => {
 
   return (
     products && (
-      <div className="max-w-screen-xl mx-auto products text-center flex flex-wrap gap-10 justify-center mt-10">
+      <div className="max-w-screen-xl mx-auto products text-center flex flex-wrap gap-10 justify-center my-10">
         {products.map((p, i) => (
           <Link
             to={`/products/${p.id}`}

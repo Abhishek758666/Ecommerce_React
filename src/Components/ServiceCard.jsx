@@ -36,13 +36,13 @@ const ServiceCard = () => {
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto flex justify-between my-10">
+    <div className="max-w-screen-xl mx-auto flex flex-wrap gap-10 justify-center my-10">
       {services.map((s, i) => {
         const IconComponent = iconMap[s.logo];
         return (
           <div
             key={i}
-            className="flex items-center w-max gap-5 px-10 p-5 border-2 bg-[#D10024]"
+            className="flex items-center w-max gap-5 px-7 p-4 bg-[#D10024]"
           >
             <IconComponent className="text-4xl text-[#fff]" />
             <div className="text-[#fff] font-bold">

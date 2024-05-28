@@ -8,6 +8,7 @@ import Loader from "./Loader";
 import ServiceCard from "../Components/ServiceCard";
 import Slider from "../Components/Slider";
 import AllProduct from "../Components/AllProduct";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   const [category, setCategory] = useState(null);
@@ -33,13 +34,14 @@ const Home = () => {
     <>
       <Topnav />
       <Navbar />
-      <div className="max-w-screen-xl flex mx-auto mt-10 gap-10">
+      <div className="max-w-screen-xl flex mx-auto px-[3vw] lg:px-0 mt-10 gap-10">
         <Sidebar category={category} />
         <Header wallpaper={wallpaper} />
       </div>
       <ServiceCard />
       <Slider />
       <AllProduct />
+      <Footer />
     </>
   ) : (
     <Loader />

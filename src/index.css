@@ -7,6 +7,18 @@ select > option {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d10024;
+}
+
 .slick-slide > div {
   margin: 0 10px;
 }

@@ -42,7 +42,7 @@ const Header = ({ wallpaper }) => {
             onChange={(e) => setInput(e.target.value)}
             type="text"
             placeholder="Search...."
-            className="border-2 w-[40rem] px-10 py-2"
+            className="border-2 w-[50vw] px-10 py-2"
           />
           <RiSearch2Line className="text-3xl" color="#D10024" />
         </div>
@@ -67,7 +67,13 @@ const Header = ({ wallpaper }) => {
           {wallpaper.title}
         </h1>
         <p className="w-[50%]">{wallpaper.description.slice(0, 100)}...more</p>
-        <Link className="px-5 py-2 bg-[#d10024] text-white">Shop Now</Link>
+
+        <Link
+          to={`/products/${wallpaper.id}`}
+          className="px-5 py-2 bg-[#d10024] text-white"
+        >
+          Shop Now
+        </Link>
       </div>
     </div>
   );

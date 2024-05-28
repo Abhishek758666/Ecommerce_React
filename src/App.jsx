@@ -1,6 +1,4 @@
 import React from "react";
-import Navbar from "./Components/Navbar";
-import Topnav from "./Components/Topnav";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 import FilterProduct from "./pages/FilterProduct";

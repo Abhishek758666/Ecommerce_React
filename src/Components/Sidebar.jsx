@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Sidebar = ({ category }) => {
   return (
-    <div className="w-[20rem] mt-5 h-max border-[1px]">
+    <div className="hidden lg:inline-block w-[20rem] mt-5 h-max border-[1px]">
       <h1 className="p-4 bg-[#D10024] text-white font-bold text-2xl">
-        Categories
+        Top searches
       </h1>
       <div className="flex flex-col">
         {category &&

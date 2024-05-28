@@ -55,7 +55,7 @@ const Navbar = () => {
   return (
     <div className=" z-50 max-w-screen-xl sticky top-0 py-4 mx-auto flex justify-between items-center bg-white shadow-sm">
       <Link to="/" className="logo text-3xl text-[#D10024]">
-        LOGO
+        <img src="/Logo.png" className="h-[4rem]" />
       </Link>
       <div className="nav flex gap-10 capitalize font-semibold">
         {links.map((l, index) => (

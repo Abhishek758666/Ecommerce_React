@@ -8,6 +8,7 @@ import Navbar from "../Components/Navbar";
 import Loader from "./Loader";
 import noImg from "/noImg.png";
 import SecLoader from "../Components/SecLoader";
+import Footer from "../Components/Footer";
 
 const FilterProduct = () => {
   const [filterProducts, setFilterProducts] = useState(null);
@@ -37,7 +38,7 @@ const FilterProduct = () => {
       {loading ? (
         <SecLoader />
       ) : (
-        <div className="max-w-screen-xl mx-auto products text-center flex flex-wrap gap-10 justify-center mt-10">
+        <div className="max-w-screen-xl mx-auto products text-center flex flex-wrap gap-10 justify-center my-10">
           {filterProducts.map((p, i) => (
             <Link
               to={`/products/${p.id}`}
@@ -66,6 +67,7 @@ const FilterProduct = () => {
           ))}
         </div>
       )}
+      <Footer />
     </div>
   );
 };
